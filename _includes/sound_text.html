@@ -1,0 +1,92 @@
+<html>
+<head>
+	<style>
+
+.bl-red {
+    color: #D22B2B;
+}
+
+.bl-red:hover {
+    color: #851c1c;
+}
+
+.temp_text {
+  color: #28d1a4;
+}
+
+.temp_text:hover {
+  color: #167058;
+}
+
+.mute-button {
+    margin-bottom: 50px; /* Adds space below the button */
+    margin-top: 30px;    /* Adds space above the button */
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.mute-button:hover {
+    background-color: #ddd;
+}
+
+</style>
+</head>
+<div style="margin-bottom: 25px;">
+<body>
+    <p id="temp_text" style="" class="temp_text" onclick="playSoundAddText()">{{ include.initial_text }}</p>
+</body>
+</div>
+
+<script type="text/javascript">
+    
+var paragraph = document.getElementById("temp_text");
+
+var audio = new Audio({{ include.sound_path }});
+
+var muteButton = document.createElement('mt_button');
+muteButton.innerHTML = "Mute";
+muteButton.classList.add('mute-button');
+muteButton.style.display = 'none';
+muteButton.style.marginBottom = "50px";
+paragraph.insertAdjacentElement("afterend", muteButton);
+var isMuted = false;
+muteButton.onclick = function() {
+
+    if (isMuted) {
+        audio.muted = false;
+        muteButton.innerHTML = "Mute";
+    } else {
+        audio.muted = true;
+        muteButton.innerHTML = "Unmute";
+    }
+    isMuted = !isMuted;  // Toggle the mute state
+}
+    
+function playSoundAddText() {
+    
+    if (!paragraph.classList.contains('expanded')) {
+        muteButton.style.display = 'inline';
+        paragraph.classList.add('bl-red');
+        paragraph.classList.add('expanded');
+        paragraph.classList.remove('temp_text');
+        audio.play();
+        paragraph.innerHTML = "{{ include.final_text }}";
+    } else {
+        paragraph.innerHTML = "{{ include.initial_text }}";
+        paragraph.classList.remove('bl-red');
+        paragraph.classList.remove('expanded');
+        paragraph.classList.add('temp_text');
+        muteButton.style.display = 'none';
+        audio.pause();
+    }
+}
+
+
+    
+</script>
+
+</html>
