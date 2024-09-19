@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /chp1/
-title: "Chapter I – Humble Beginnings "
+title: "Chapter I – Humble Beginnings"
 toc: true
 order: 3
 ---
@@ -14,6 +14,10 @@ order: 3
 </div>
 </details>
 <br>
+
+<image style="border: 5px solid #cc5b0a; margin-bottom: 3px;" src="/assets/img/story/im_new.png"></image>
+<figcaption style="margin-bottom: 20px; margin-left: 5px;">Slayer meets Cactos - <i>December 31, 2019 @ LL1 Stronghold</i></figcaption>
+
 # Chapter I – Humble Beginnings 
 
 Once upon a time, there was a player called “GrazingDeer” – GD for short. GD had picked up LLB on a whim, enticed by its funky soundtrack and wacky visuals.
@@ -29,11 +33,9 @@ A notification pops up. A friend request from a player called birkkkk. GD reluct
 
 ![birkkkk](/assets/img/story/birk.png)
  
-GrazingDeer’s journey was just about to begin.
-
+**GrazingDeer’s journey was just about to begin.**
 <br>
 <br>
-
 ## Unexplained Mechanics
 
 At this point in your LLB career, there are absolutely going to be mechanics you weren't even aware of, since they aren't explaiend anywhere in-game. Here are some of the more commonly skipped over mechanics in the game.
@@ -210,12 +212,10 @@ Much better. 10 to 100 times better. So, don't get demotivated if you lose for a
 Now, if you're lucky and get to find some new adventurers starting out their journey at the same time as you: <a id="image_revealer"><b>for the love of god, hang unto them</b></a>.
 
 <span id="hidden-image" style="display: none;">
-  ![Pinky Promise](../assets/img/story/pinky_promise.png)
+  ![Battle of the Noobs](../assets/img/story/noob_battle.png)
 </span>
 
 It is much easier to stay motivated if you find someone of similar skill to spar with. But still, be prepared to lose horribly for the next 100 hours. Most of us went through that, you can do it too.
-
-![Battle of the Noobs](../assets/img/story/noob_battle.png)
 
 If it helps you, keep a list of despicable players you want to get revenge on in the future. A hit list is pretty common. I had one myself! :)
 
